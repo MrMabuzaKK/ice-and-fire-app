@@ -13,9 +13,9 @@ const LandingPage = () => {
         <Link to="/houses" className="landing-link">Discover Houses</Link>
       </div>
       <div className="slider-container">
-        <img src="/images/got-1.jpg" alt="Game of Thrones Scene 1" className="slider-image" />
-        <img src="/images/got-2.jpg" alt="Game of Thrones Scene 2" className="slider-image" />
-        <img src="/images/got-3.jpg" alt="Game of Thrones Scene 3" className="slider-image" />
+        <img src="/images/got-1.jpg" alt="1" className="slider-image" />
+        <img src="/images/got-2.jpg" alt="2" className="slider-image" />
+        <img src="/images/got-3.jpg" alt="3" className="slider-image" />
       </div>
     </div>
   );
