@@ -1,0 +1,26 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  background-color: var(--background-color);
+}
+
+.footer p {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: var(--primary-color-dark);
+}

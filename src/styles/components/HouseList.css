@@ -1,0 +1,107 @@
+.house-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.house-list .list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.house-list .list-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.house-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.house-list li {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.house-list li:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-1px);
+}
+
+.house-list li strong {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.house-list li p {
+  color: var(--secondary-color);
+  margin: 0.25rem 0;
+}
+
+.house-list .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.house-list .pagination button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: var(--background-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.house-list .pagination button.active {
+  background: var(--primary-color);
+  color: var(--background-color);
+  border-color: var(--primary-color);
+}
+
+.house-list .pagination button:hover:not(.active) {
+  background: var(--hover-color);
+}
+
+.house-list .detail-row {
+  margin-bottom: 0.5rem;
+}
+
+.house-list .detail-label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.house-list .detail-list {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.house-list .detail-list li {
+  margin-bottom: 0.25rem;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.house-list .detail-list li:hover {
+  transform: none;
+  box-shadow: none;
+}

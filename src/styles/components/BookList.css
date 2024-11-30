@@ -1,0 +1,81 @@
+.book-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.book-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-list li {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.book-list li:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-1px);
+}
+
+.book-list li strong {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.book-list li p {
+  color: var(--secondary-color);
+  margin: 0.25rem 0;
+}
+
+.book-list .list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.book-list .list-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: var(--background-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination button.active {
+  background: var(--primary-color);
+  color: var(--background-color);
+  border-color: var(--primary-color);
+}
+
+.pagination button:hover:not(.active) {
+  background: var(--hover-color);
+}
