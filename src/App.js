@@ -5,12 +5,10 @@ import BookList from './components/features/books/BookList';
 import CharacterList from './components/features/characters/CharacterList';
 import HouseList from './components/features/houses/HouseList';
 import Footer from './components/layout/Footer';
-import LandingPage from './components/layout/LandingPage';
 import useDataFetching from './hooks/useDataFetching';
 import { fetchBooks, fetchCharacters, fetchHouses } from './services/apiService';
 import './styles/variables.css';
 import './styles/global.css';
-import './styles/components/LandingPage.css';
 
 function App() {
   const { data: books, loading: booksLoading, error: booksError } = useDataFetching(fetchBooks);
